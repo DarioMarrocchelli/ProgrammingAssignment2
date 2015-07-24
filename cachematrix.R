@@ -1,15 +1,17 @@
 ## The functions written here allow the user to set a matrix, read it and 
-## calculate its mean. The mean of the matrix gets cached, so that one does 
-# not need to calculate it everytime.
+## calculate its inverse. The inverse matrix gets cached, so that one does 
+## not need to calculate it everytime.
 
 ## At the end of this file, I report some instructions detailing how 
-## one can run these functions
+## one can run and test these functions
 
 ## This function stores 4 functions. These are set, get, setSolve and getSolve
-## set() : sets a new matrix
-## get() : returns the value of 'x'
+## set() : sets a new matrix 'y', given by the user
+## get() : returns matrix 'x'
 ## setSolve() : stores the input in a variable m into the main function 
 ## getSolve() : returns the variable m
+## More info regarding these functions can be found under
+## https://github.com/DanieleP/PA2-clarifying_instructions
 
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
@@ -68,7 +70,5 @@ cacheSolve <- function(x, ...) {
 ## a <- makeCacheMatrix(matrix2)
 ## cacheSolve(a)
 ## Why is it slow again?
-
-
 
 
